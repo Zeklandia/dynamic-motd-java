@@ -3,19 +3,10 @@
 
 SUBDIRS = src 
 
-dynamic_motddocdir = ${prefix}/doc/dynamic_motd
-dynamic_motddoc_DATA = \
-	README\
-	COPYING\
-	AUTHORS\
-	ChangeLog\
-	INSTALL\
-	NEWS
 
-
-EXTRA_DIST = $(dynamic_motddoc_DATA)
+EXTRA_DIST = $(dynamic_motd_javadoc_DATA)
 
 
 # Remove doc directory on uninstall
 uninstall-local:
-	-rm -r $(dynamic_motddocdir)
+	-rm -r $(dynamic_motd_javadocdir)

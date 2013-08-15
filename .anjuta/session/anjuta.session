@@ -1,15 +1,19 @@
 [Anjuta]
 Geometry=1364x708+0+27
 
+[File Loader]
+Files=../../src/Main.java#24
+
 [Document Manager]
 bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
 
+[Project Manager]
+Expand=Dynamic-MOTD-Java
+
 [Execution]
+Program uri=../../src/Main.class
 Run in terminal=2
 Working directories=../../../Dynamic-MOTD-Java
-
-[Project Manager]
-Expand=Dynamic-MOTD-Java%%%Dynamic-MOTD-Java//src%%%Dynamic-MOTD-Java//src//dynamic_motd
 
 [Build]
 Configuration list=1:Default:%%%1:Debug:Debug%%%1:Profiling:Profiling%%%1:Optimized:Optimized

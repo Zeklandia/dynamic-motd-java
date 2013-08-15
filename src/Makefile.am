@@ -11,7 +11,7 @@ AM_JAVACFLAGS =
 JAVAROOT = $(top_builddir)/src
 
 ## Directory where .class files will be installed
-dynamic_motddir = $(libdir)/dynamic_motd
+dynamic_motd_javadir = $(libdir)/dynamic_motd_java
 
-dynamic_motd_JAVA = \
+dynamic_motd_java_JAVA = \
 	Main.java

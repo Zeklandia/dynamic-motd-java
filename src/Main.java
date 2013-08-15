@@ -1,49 +1,24 @@
-package com.zekfed.desktop.tools;
-
-import java.io.File;
-import java.io.IOException;
-import jcurses.system.Toolkit;
-import org.fusesource.jansi.AnsiConsole;
-
-public class dynmotd {
-     public static void main(String[] args) throws IOException {
-
-          Runtime runTime = Runtime.getRuntime();
-          Toolkit.clearScreen(null);
-          System.out.println("Loading...");
-
-          String userHome = System.getProperty("user.home");
-          File folder = new File(userHome + "/.config");
-          if(folder.exists()){
-          File configFile = new File(userHome + "/.config/dynmotd.conf");
-          if(configFile.exists()) {}
-          }
-          else{
-          boolean wasDirectoryMade = folder.mkdirs();
-          if(wasDirectoryMade);
-          else
-               System.out.println("Error creating configuration. Is your home foler mounted R/W?");
-          }
-
-
+/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*-  */
 /*
-source $CONFIGFILE
-TIME=`date`
-HOST=`hostname`
-WIFIADDR=`ifconfig wlan0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
-ETHADDR=`ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
-KERNELVER=`uname -r`
-USERSTATS=`w`
-MEMSIZE=`cat /proc/meminfo | grep MemTotal | awk {'print $2'}`
-USER=`whoami`
-LASTLOGIN=`last -n 2 -R $USER | awk 'NR==2'`
-PROCOUNT=`ps -Afl | wc -l`
-PROLIMIT=`ulimit -u`
-WLOC=`weather $ZIP | grep 'Current conditions at' | awk '{print $4}'`
-WTEMP=`weather $ZIP | grep 'Temperature:' | awk '{print $2}'`
-WCOND=`weather $ZIP | grep 'Weather:' | cut -d: -f2 | cut -c2-`
-WSKY=`weather $ZIP | grep 'Sky conditions:' | cut -d: -f2 | cut -c2-`
-*/
-System.out.println("Done!");
-     }
+ * Main.java
+ * Copyright (C) 2013 Asher Wood <awood5659@gmail.com>
+ * 
+ * dynamic-motd-java is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the
+ * Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * dynamic-motd-java is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along
+ * with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+class Main {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
 }
