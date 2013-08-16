@@ -18,5 +18,6 @@ AM_SILENT_RULES([yes])
 AC_OUTPUT([
 Makefile
 src/Makefile
+lib/Makefile
 
 ])
